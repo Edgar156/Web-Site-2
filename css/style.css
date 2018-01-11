@@ -1,0 +1,238 @@
+/*Index Page CSS*/
+
+/*--------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /*Properties of the page are reset by changing the margin and padding
+    as some web-pages have default pre-sets for the latter properties*/
+    /*Backup font in-case website does not support*/
+}
+
+/*
+/*"z-index: 1" used on the nav bar to make it appear over the top of the background image*/
+
+.navBG {
+    width: 100%;
+    height: 40px;
+    background-color: #c49e38;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+}
+
+/*Change image on mouse hover*/
+
+.image_off,
+.logo:hover .image_on {
+    display: none
+}
+
+.image_on,
+.logo:hover .image_off {
+    display: block
+}
+
+/*Navigation bar*/
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 100px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+nav .logo {
+    float: left;
+}
+
+nav .logo img {
+    margin-top: 40px;
+    height: 150px;
+    transition: 0.5s;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    font-weight: 600;
+    line-height: 20px;
+    color: #ffeba5;
+    padding: 12px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    color: #c49e38;
+    background: white;
+}
+
+/*Background image*/
+
+section.sec1 {
+    width: 100%;
+    height: 100vh;
+    background: url("../assets/bg.jpg");
+    position: fixed;
+    /*Fixes the background image in place, stopping it from moving when the user scrolls up and down*/
+    top: 0;
+    /*Fixes the image to the top of the page*/
+    z-index: 0;
+}
+
+/*"Get Started" button*/
+
+.intro {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.intro a {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    font-size: 250%;
+    border: solid 3px;
+    padding: 8px;
+    border-radius: 10px;
+    color: #c49e38;
+    transition: 0.5s;
+    text-decoration: none;
+    z-index: 1;
+}
+
+/*Changes style of "Get Started" button*/
+
+.intro a:hover {
+    border-style: dashed;
+    color: #ffeba5;
+    transition: 0.5s;
+}
+
+/*--------------*/
+
+/*Product Page CSS*/
+
+/*--------------*/
+
+#Main #Wrapper {
+    position: relative;
+    background-color: rgba(255, 235, 165, 0.6);
+    height: 1200px;
+    width: 900px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.box {
+    position: relative;
+    top: 0;
+    float: left;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 300px;
+    min-width: 300px;
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s;
+}
+
+.box .pName {
+    opacity: 0.5;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    padding: 0;
+    transition: 0.9s;
+    display: block;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 300px;
+    color: transparent;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.box:hover .pName {
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    display: block;
+    background-color: black;
+    transition: 0.9s;
+}
+
+/*Child classes from the 'Box' parent being stylised with images for the products image*/
+
+.prod1 {
+    background: url("../assets/18.png");
+}
+
+.prod2 {
+    background: url("../assets/16.png");
+}
+
+.prod3 {
+    background: url("../assets/6.png");
+}
+
+.prod4 {
+    background: url("../assets/7.png");
+}
+
+.prod5 {
+    background: url("../assets/8.png");
+}
+
+.prod6 {
+    background: url("../assets/9.png");
+}
+
+.prod7 {
+    background: url("../assets/10.png");
+}
+
+.prod8 {
+    background: url("../assets/11.png");
+}
+
+.prod9 {
+    background: url("../assets/12.png");
+}
+
+.prod10 {
+    background: url("../assets/13.png");
+}
+
+.prod11 {
+    background: url("../assets/14.png");
+}
+
+.prod12 {
+    background: url("../assets/19.png");
+}
